@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+.form {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Form Styling */
+.form-left form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-left form input,
+.form-left form textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-left form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Right Contact Info Styling */
+.form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10%;
+}
+
+.log img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.log .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-left,
+    .form-right {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+/* Styling the form container */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 5%;
+}
+
+.contact .cot {
+    flex: 1 1 45%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .cot label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact .cot input,
+.contact .cot textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact .cot textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.contact .cot .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9d9fa0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact .cot .btn:hover {
+    background-color: #666869;
+}
+
+/* Styling the map container */
+.contact iframe {
+    flex: 1 1 45%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact .map {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .cot,
+    .contact iframe {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Notary</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="testimoniall.html">Testimonials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div> -->
+
+        </div> 
+        <div class="content" style="text-align: center;">
+            <h1>About Us </h1>
+            <p class="par">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis<br> cupiditate deserunt placeat necessitatibus a aliqum corrupti nisi adio<br> aliquid, accusamus.</p>
+
+        
+    </div>
+    
+    <section style="background-color: #f9f9f9; padding: 5% 10%;" id="contact">
+        <section class="contact" id="contact" >
+            <form class="cot" style="width: 300px;">
+                <div style="display: flex; gap: 5%;">                
+                    <input type="text" id="name" placeholder=" Name">               
+                    <input type="text" id="email" placeholder="Email"><br><br>
+                </div>
+                    <input type="text" id="email" placeholder="Subject"><br><br>
+            
+                <textarea id="message" placeholder="Enter your message"></textarea><br><br>
+                
+                <button class="btn">Submit</button>
+            </form>
+
+
+            
+<div class="name form-right">
+    <div class="abt" style="line-height: 30px; ">
+        <div class="log">
+            <img src="atty_1.jpg.webp" alt="Address Icon">
+            <div >
+                <p class="label">Address:</p>
+                <p>198 West 21th Street, Suite 721, New York NY 10016</p>
+            </div>
+        </div>
+        <div class="log" style="padding-top: 10%; padding-bottom: 10%;">
+            <img src="atty_2.jpg.webp" alt="Phone Icon">
+            <div>
+                <p class="label">Phone:</p>
+                <p>+1235 2355 98</p>
+            </div>
+        </div>
+        <div class="log">
+            <img src="atty_1.jpg.webp" alt="Email Icon">
+            <div>
+                <p class="label">Email:</p>
+                <p>example@example.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+
+    </section>
+    
+
+
+
+          
+        
+
+    <!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
+</body>
+</html>
