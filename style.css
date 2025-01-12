@@ -42,6 +42,7 @@
     width: auto;
     float: right;
     height: 70px;
+    padding-right: 5%;
     
 }
 
@@ -157,6 +158,7 @@ ul li a{
     color: #000;
 }
 .area{
+    
     text-align: center;
     margin-top: 0;
     padding: 50px ;
@@ -167,10 +169,12 @@ ul li a{
     
 }
 .law-container {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     gap: 20px; 
+    padding-left: 80px;
     justify-content: space-evenly; 
     height: auto;
 }
